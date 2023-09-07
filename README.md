@@ -15,27 +15,29 @@ The project has the following directory structure:
 - Next.js 13 application with NextAuth for authentication
 - JWT token-based authentication for both Next.js and Laravel
 
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- [Docker](https://www.docker.com/) installed and running.
+- Node.js (minimum version 18) installed on your local machine.
+- Ensure that the `.local.sh` script has executable permissions. You can set the permissions using the following command:
+
+  ```bash
+    chmod +x .local.sh
+  ```
+
 ## Getting Started
 
 To run this project, follow these steps (full instructions will be provided by you):
 
- ## Manual Installation
+ ### Manual Installation
 
- ### Configuring the Laravel App
+ #### Configuring the Laravel App
 
 Create a .env file in the server directory by copying it from .env.example.
     
     cp src/server/.env.example src/server/.env
-
-Generate an OpenSSL key by running 
-
-    openssl rand -base64 32 
-
-Add it as the NEXTAUTH_SECRET in the .env file NEXTAUTH_SECRET
-
-Optionally, you can add NEXTAUTH_JWT_AGE to set the JWT token age.
-
-    NEXTAUTH_JWT_AGE=1209600
 
 Build the Docker containers with:
 
@@ -77,13 +79,24 @@ To exit the container, type
     
     exit
 
-### Configuring the Next.js App
+#### Configuring the Next.js App
 
 Navigate to the src/client directory.
 
 Create a .env.local file by copying it from .env.example.
 
     cp src/client/.env.example src/client/.env.local
+
+Generate an OpenSSL key by running 
+
+    openssl rand -base64 32 
+
+Add it as the NEXTAUTH_SECRET in the .env file NEXTAUTH_SECRET
+
+Optionally, you can add NEXTAUTH_JWT_AGE to set the JWT token age.
+
+    NEXTAUTH_JWT_AGE=1209600
+
 
 Start by installing the required dependencies:
 
