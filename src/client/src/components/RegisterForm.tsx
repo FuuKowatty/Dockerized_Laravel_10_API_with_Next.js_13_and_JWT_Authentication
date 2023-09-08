@@ -61,7 +61,7 @@ export default function RegisterForm() {
           id="name"
           name="name"
           type="text"
-          defaultValue="John Doe"
+          placeholder="John Doe"
           className="w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-blue-500"
         />
       </div>
@@ -77,7 +77,7 @@ export default function RegisterForm() {
           id="email"
           name="email"
           type="email"
-          defaultValue="john@avocado-media.nl"
+          placeholder="john@avocado-media.nl"
           className="w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-blue-500"
         />
       </div>
@@ -93,7 +93,7 @@ export default function RegisterForm() {
           id="password"
           name="password"
           type="password"
-          defaultValue="password"
+          placeholder="must contain min 8 characters"
           className="w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-blue-500"
         />
       </div>
@@ -109,7 +109,7 @@ export default function RegisterForm() {
           id="password_confirmation"
           name="password_confirmation"
           type="password"
-          defaultValue="password"
+          placeholder="must contain min 8 characters"
           className="w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-blue-500"
         />
       </div>

@@ -53,7 +53,7 @@ export function ChangePasswordForm() {
           id="password"
           name="password"
           type="password"
-          defaultValue="password"
+          placeholder="must contain min 8 characters"
           className="w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-blue-500"
         />
       </div>
@@ -69,7 +69,7 @@ export function ChangePasswordForm() {
           id="password_confirmation"
           name="password_confirmation"
           type="password"
-          defaultValue="password"
+          placeholder="must contain min 8 characters"
           className="w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-blue-500"
         />
       </div>

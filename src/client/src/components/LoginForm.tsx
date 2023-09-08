@@ -35,7 +35,7 @@ export default function LoginForm() {
             id="email"
             name="email"
             type="email"
-            defaultValue="lars@avocado-media.nl"
+            defaultValue="test@test.com"
             className="w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring-blue-500"
           />
         </div>
