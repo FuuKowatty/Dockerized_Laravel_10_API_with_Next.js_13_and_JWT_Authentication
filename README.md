@@ -45,7 +45,7 @@ Build the Docker containers with:
     
 Start the Docker containers in detached mode:
 
-    docker-compose up -d
+    ./local.sh start or docker-compose --env-file ./src/server/.env up -d
 
 Access the Laravel app container with:
 
@@ -53,7 +53,7 @@ Access the Laravel app container with:
 
 Inside the container, run 
 
-    composer install. 
+    composer install
     
 If you encounter a "permission denied" error, run and try again:
 
