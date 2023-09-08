@@ -55,10 +55,6 @@ Inside the container, run
 
     composer install
     
-If you encounter a "permission denied" error, run and try again:
-
-    chmod -R 777 storage/
-
 Generate an application encryption key:
 
     php artisan key:generate
@@ -74,6 +70,10 @@ To migrate the database and seed it with basic logins:
 
     php artisan migrate
     php artisan db:seed
+
+If you encounter a "permission denied" error, run and try again:
+
+    chmod -R 777 storage/
 
 To exit the container, type 
     
