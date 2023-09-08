@@ -35,6 +35,10 @@ To run this project, follow these steps (full instructions will be provided by y
 
  #### Configuring the Laravel App
 
+Clone repository using following command
+    
+    git clone https://github.com/FuuKowatty/Dockerized_Laravel_10_API_with_Next.js_13_and_JWT_Authentication.git .
+
 Create a .env file in the server directory by copying it from .env.example.
     
     cp src/server/.env.example src/server/.env
@@ -98,7 +102,7 @@ Optionally, you can add NEXTAUTH_JWT_AGE to set the JWT token age.
     NEXTAUTH_JWT_AGE=1209600
 
 
-Start by installing the required dependencies:
+Start by installing the required dependencies (make sure you are in client directory):
 
     npm install
 
